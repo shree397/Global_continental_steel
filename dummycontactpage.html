@@ -1,31 +1,38 @@
-﻿
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <title>contact-page</title>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service-page</title>
     <link rel="stylesheet" href="style1-contactpage.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 <body>
     <header class="header1">
         <div class="container1">
             <div class="logo">
-                <img class="logo" src="images/abbas steel 1.png" />
+                <img class="logo" src="images/globalsteellogo.png" />
             </div>
             <div class="header1-text">
                 <ul>
                     <a class="icons" href="#"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:1.75em"></i></a>
                     <li id="location" class="vl">
-                        Al Qusais Ind Area 1,<br />
-                        Factory Number 45, 242<br> Community Number, Street<br>Number 25, Doha Road
+                        Plot No: 119<br />
+                        P.O Box No.13169<br>Mussafah-37<br>Abu Dhabi U.A.E
                     </li>
 
                     <a class="icons" href="#"><i class="fa fa-phone" aria-hidden="true" style="font-size:1.75em"></i></a>
                     <li id="phone" class="vl">
-                        +971 42671200<br />
-                        info@abbasmetal.com
+                        0507513285 <br />
+                        0552397136<br />
+                        globalcs@emirates.net.ae
                     </li>
                 </ul>
             </div>
@@ -44,76 +51,79 @@
             <input type="checkbox" id="toggle" />
             <div class="navbar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">About Us</a>
                         <div class="dropdown-content">
-                            <a href="about-dropdown.html">Why Choose Us</a>
-                            <a href="about-dropdown.html">Company history</a>
-                            <a href="about-dropdown.html">Organisation Structure</a>
+                            <a href="./About-page.html">Why Choose Us</a>
+                            <a href="./About-page.html">Company history</a>
+                            <a href="./About-page.html">Organisation Structure</a>
                         </div>
                     </li>
-                    <li><a href="service-page.html">Services</a></li>
-                    <li><a href="product-gallery-page.html">Product Gallery</a></li>
-                   
-                    <li><a href="abbas-contactpage.html">Contact Us</a></li>
+                    <li><a href="./service-page.html">Services</a></li>
+                    <li><a href="./gallery.html">Product Gallery</a></li>
+
+                    <li><a href="./dummycontactpage.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="social">
-                <a id="res" href="https://www.facebook.com/AbbasSteelIndustries"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a id="res" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFJISFuEkUklgAAAYh6jn74Gbhjjsd0mCW3ctRO7xCAq3vaFS5ZTjnIV_knEuMH73NB-RCd3oG3q6RI3KOWm7GFEhGg7A8UOoA-RchNviXiFq6GyZUeWRg_W6N_-0XfJs3CEuA=&original_referer=https://abbasmetal.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fabbas-steel-industries%2F"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a id="res" href="https://www.instagram.com/abbassteel_industries/"<i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a id="res" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a id="res" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a id="res" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
             </div>
     </div>
-
     <div id="overlay">
         <h4>You can reach out to us via email, call or WhatsApp using the below given information. You may directly submit an inquiry using the contact form below and our team will get back to you shortly. We look forward to hearing from you.</h4>
         <div class="global-img">
             <img src="images/globalsteellogo.png" />
         </div>
-        <form onsubmit="event.preventDefault(); validateForm()">
+        <form action="https://formsubmit.co/Globalsteel144@gmail.com" method="POST" ; onsubmit="event.preventDefault(); validateForm()">
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Your name*" />
-            <small class="error"></small>
+            <small class="error" id="name-error"></small>
+
             <label for="email">Email:</label>
             <input type="text" id="email" placeholder="Your email*" />
-            <small class="error"></small>
+            <small class="error" id="email-error"></small>
+
             <label for="phone">Phone:</label>
             <input type="text" id="phone" placeholder="Phone*" />
-            <small class="error"></small>
+            <small class="error" id="phone-error"></small>
+
             <label for="company-name">Company Name</label>
             <input type="text" id="company" placeholder="Company Name*" />
-            <small class="error"></small>
-            <label for="message">message</label>
+            <small class="error" id="company-error"></small>
+
+            <label for="message">Message:</label>
             <textarea id="message" placeholder="Message" rows="6"></textarea>
-            <small class="error"></small>
+            <small class="error" id="message-error"></small>
 
             <div class="center">
                 <input type="submit" value="Send Message">
-
+            </div>
         </form>
     </div>
     <div>
-        <p id="map"><iframe src="https: //www.google.com/maps/embed?pb =!1m14!1m8!1m3!1d7214.6022531278495!2d55.388821!3d25.294085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c16d44fc1c1%3A0x50e617496b2b25ab!2sAbbas%20Steel%20Industries%20LLC!5e0!3m2!1sen!2sin!4v1686652045026!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"</p>
+        <p id="map"><iframe src="https: //www.google.com/maps/embed?pb =!1m14!1m8!1m3!1d7214.6022531278495!2d55.388821!3d25.294085!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c16d44fc1c1%3A0x50e617496b2b25ab!2sAbbas%20Steel%20Industries%20LLC!5e0!3m2!1sen!2sin!4v1686652045026!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
     </div>
     <footer class="footer">
         <ul>
             <a class="icons-1" href="#"><i class="fa fa-map-marker" aria-hidden="true" style="font-size:1.75em"></i></a>
             <li id="footer-location" class="vl-footer">
-                Al Qusais Ind Area 1, Factory Number 45, 242 Community Number Street Number 25, Doha Road
+                Plot No: 119, P.O Box No.13169, Mussafah-37, Abu Dhabi U.A.E
             </li>
             <a class="icons-2" href="#"><i class="fa fa-phone" aria-hidden="true" style="font-size:1.75em"></i></a>
             <li id="footer-phone" class="vl-footer">
-                +971 42671200<br />
+                0507513285 <br />
             </li>
             <a class="icons-3" href="#"><i class="fa fa-phone" aria-hidden="true" style="font-size:1.75em"></i></a>
             <li id="footer-phone" class="vl-footer">
-                0559542098<br />
+                0552397136 <br />
             <li />
             <a class="icons-4" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <li id="footer-mail" class="vl-footer">info@abbasmetal.com</li>
-            <hr />
+            <li id="footer-mail" class="vl-footer"> globalcs@emirates.net.ae</li>
+
             <li id="hr"></li>
         </ul>
         <div class="footer-container">
@@ -121,30 +131,31 @@
                 <div class="col" id="About">
                     <h2>About Us</h2>
                     <p class="pas">Abbas Steel Industries has 4 decades of industry experience in the business of Manufacturing and Fabrication and are leaders in Stainless Steel manufacturing & Fabrication serving government, public and private sectors across Dubai and GCC countries.</p><br />
-                    <a class="button" href="abbas-contactpage.html">Contact</a>
+                    <a class="button" href="./dummycontactpage.html">Contact</a>
                 </div>
                 <div class="col" id="services">
                     <h2>Our Services</h2>
                     <div class="service-links">
-                        <a href="#aluminium-page.html">-ALUMINIUM FABRICATION</a><br />
-                        <a href="structural-steel.html">-STRUCTURAL STEEL</a><br />
-                        <a href="fabrication-page.html">-METAl FABRICATION</a><br />
-                        <a href="welding-page.html">-WELDING FABRICATION</a><br />
-                        <a href="stainless-page.html">-STAINLESS STEEL</a><br />
-                        <a href="sledge-tankpage.html">-TANKS FABRICATION</a><br />
+                        <a href="./aluminium-page.html">-ALUMINIUM FABRICATION</a><br />
+                        <a href="./structural-page.html">-STRUCTURAL STEEL</a><br />
+                        <a href="./fabrication-page.html">-METAl FABRICATION</a><br />
+                        <a href="./Weld-page.html">-WELDING FABRICATION</a><br />
+                        <a href="./Stainless-page.html">-STAINLESS STEEL</a><br />
+                        <a href="./Sledge-tank.html">-TANKS FABRICATION</a><br />
 
                     </div>
                 </div>
                 <div class="col" id="quick">
                     <h2>Quick Links</h2>
                     <div class="quick-link">
-                        <a href="index.html">-Home</a><br />
-                        <a href="about-dropdown.html">-About Us</a><br />
-                        <a href="service-page.html">-Services</a><br />
+                        <a href="./index.html">-Home</a><br />
+                        <a href="./About-page.html">-About Us</a><br />
+                        <a href="./service-page.html">-Services</a><br />
                         <a href="#">-Project</a><br />
-                        <a href="product-gallery-page.html">-Gallery</a><br />
+                        <a href="./gallery.html">-Gallery</a><br />
                         <a href="#">-Certification</a><br />
                     </div>
+
                 </div>
                 <div class="col" id="follow">
                     <h2>Follow Us</h2>
@@ -154,17 +165,18 @@
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                     <div class="footer-img">
-                        <img class="logo" src="images/abbasmetal-logo-copyfooter-1.png" />
+                        <img class="logo" src="images/globalsteellogo.png" />
                     </div>
                 </div>
             </div>
         </div><br />
         <div class="hr"></div>
-        <div id="row">
-            <div id="col">Copyright © 2022 Abbas Steel Industries. All Rights Reserved.</div>
-            <div class="row-foot">Powered by Interpret Media</div>
+        <div id="copyright">
+            <p>Copyright © 2022 Abbas Steel Industries. All Rights Reserved.</p>
+            <p class="row-foot">Powered by Interpret Media</p>
         </div>
     </footer>
-    <script src="abbas-contactpage-script.js"></script>
+
+    <script src="imges-scroll.js"></script>
 </body>
 </html>

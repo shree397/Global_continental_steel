@@ -1,68 +1,46 @@
-//get data
-const nameInput = document.querySelector('#name');
-const email = document.querySelector('#email');
-const phone = document.querySelector('#phone');
-const company = document.querySelector('#company');
-const message = document.querySelector('#message');
-const errorNodes = document.querySelector('.error');
-var i = 0;
-var a = 10;
+function validateForm() {
+    // Clear previous error messages
+    const errorElements = document.getElementsByClassName('error');
+    for (let i = 0; i < errorElements.length; i++) {
+        errorElements[i].textContent = '';
+    }
 
+    // Validate name
+    const nameInput = document.getElementById('name');
+    if (nameInput.value.trim() === '') {
+        document.getElementById('name-error').textContent = 'Name is required';
+        return false;
+    }
 
-//validate data
-function validaForm() {
+    // Validate email
+    const emailInput = document.getElementById('email');
+    const emailRegex = /^\S+@\S+\.\S+$/;
+    if (!emailRegex.test(emailInput.value)) {
+        document.getElementById('email-error').textContent = 'Please enter a valid email address';
+        return false;
+    }
 
-    clearMessage();
-    let errorFlag = false;
+    // Validate phone
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput.value.trim() === '') {
+        document.getElementById('phone-error').textContent = 'Phone is required';
+        return false;
+    }
 
-    if (nameInput.value.length < 1) {
-        errNodes[0].innerText = "The field is required";
-        nameInput.classList.add("error-border");
-        errorFlag = true;
+    // Validate company
+    const companyInput = document.getElementById('company');
+    if (companyInput.value.trim() === '') {
+        document.getElementById('company-error').textContent = 'Company Name is required';
+        return false;
     }
-    if (!emailIsValid(email.value)) {
-        errNodes[1].innerText = "The field is required";
-        nameInput.classList.add("error-border");
-        errorFlag = true;
-    }
-    if (phone(phone.value)) {
-        errNodes[2].innerText = "The field is required";
-        nameInput.classList.add("error-border");
-        errorFlag = true;
-    }
-    if (company.value.length < 1) {
-        errNodes[3].innerText = "The field is required";
-        company.classList.add("error-border");
-        errorFlag = true;
-    }
-    if (message.value.length < 1) {
-        errNodes[3].innerText = "The field is required";
-        message.classList.add("error-border");
-        errorFlag = true;
-    }
-    if (!errorFlag) {
-        submit.inner.style= "green";
-    }
-}
 
-//clear error/succes message
-function clearMessage() {
-    for (let i = 0; i < errorNodes.length; i++) {
-        errorNodes[i].innerText = "";
+    // Validate message
+    const messageInput = document.getElementById('message');
+    if (messageInput.value.trim() === '') {
+        document.getElementById('message-error').textContent = 'Message is required';
+        return false;
     }
-        nameInput.classList.remove("error-border");
-    email.classList.remove("error-border");
-    message.classList.remove("error-border");
-    phone.classList.remove("error-border");
-    company.classList.remove("error-border");
 
-}
-if (!emailIsValid(email)){
-    let pattern = ".+@globex\.com";
-    return pattern.text(email);
-}
-if phone(phone){
-    if (i = 0; i = a.length: i++) {
-        a.length.innerText = "";
-    }
+    // If all validations pass, the form can be submitted
+    return true;
 }
