@@ -69,8 +69,12 @@ input[type="submit"] {
   
 }
  #map{
-     padding-top:230px;
+     padding-top:50px;
+     width:100%;
  }
+.mapouter {
+    width: 100%;
+}
 @media only screen and (max-width:1440px) {
     h4 {
         padding-left: 10px;
@@ -111,8 +115,9 @@ input[type="submit"] {
     }
     #map {
         padding-top: 30px;
-    }
+        width:100%;
 }
+
 @media only screen and (max-width:770px) {
     #overlay h4 {
         padding-left: 10px;
@@ -134,6 +139,14 @@ input[type="submit"] {
         text-align: center;
         padding-right:0px;
     }
+}
+@media only screen and (max-width:610px) {
+
+    .mapouter {
+        width:300px;
+       
+    }
+   
 }
 @media only screen and (max-width:350px) {
     #overlay h4 {

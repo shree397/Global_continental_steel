@@ -5,6 +5,7 @@
    margin-top:60px;
    box-sizing:border-box;  
 }
+
 .main-fill {
     max-width: 1500px;
     margin: auto;
@@ -61,10 +62,24 @@ h4 {
         padding-left:50px;
         padding-right:50px;
     }
+    .btn-image {
+        align-items: center;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    #image-container {
+        text-align: center;
+    }
+    .btn-image:hover{
+        color:red;
+    }
     }
 @media only screen and (max-width:355px) {
     .filterable {
-        padding-left:0px;
+        padding-left:20px;
         padding-right:0px;
     }
     .main-fill {

@@ -448,12 +448,17 @@
     .slider img {
         width: 100%;    
     }
+    #gallery {
+        margin-top: 20px;
+        margin:20px;
+        
+    }
 }
-@media only screen and (max-width:1340px) {
+@media only screen and (max-width:1351px) {
 
     .slider img {
         width: 100%;
-        aspect-ratio:250/100;
+        aspect-ratio:150/50;
         object-fit: cover;
         height: 600px;
        
@@ -497,7 +502,7 @@
     }
     .slider img {
         width: 100%;
-        aspect-ratio: 350/100;
+        aspect-ratio: 150/50;
         object-fit: cover;
         height: 600px;
     }
@@ -526,7 +531,7 @@
 
     .slider img {
         width: 100%;
-        aspect-ratio:550/50;
+        aspect-ratio:150/50;
         object-fit: cover;
         height: 600px;
     }
@@ -623,12 +628,6 @@
     }
 }
 @media only screen and (max-width:1230px) {
-    .slider img {
-        width: 100%;
-        aspect-ratio: 650/50;
-        object-fit: cover;
-        height: 600px;
-    }
     #gallery {
         margin-top: 20px;
         margin: 10px;
@@ -636,28 +635,6 @@
         float: left;
         width: 300px;
         height:300px;
-    }
-}
-@media only screen and (max-width:1199px) {
-    .slider img {
-        width: 100%;
-        aspect-ratio: 850/50;
-        object-fit: cover;
-        height: 600px;
-        
-    }
-}
-@media only screen and (max-width:1165px) {
-    .slider img {
-        width: 100%;
-        aspect-ratio: 950/50;
-        object-fit: cover;
-        height: 600px;
-    }
-}
-@media only screen and (max-width:1024px) {
-    .slider {
-        animation-play-state:unset;
     }
 }
 @media only screen and (max-width:981px) {
@@ -709,15 +686,14 @@
 @media only screen and (max-width:831px) {
     .img-container {
         display: grid;
-        height:950px;
-        overflow:hidden;
+        
     }
     #gallery{
         width:400px;
     }
     .text-scroller {
         background-color: cornflowerblue;
-        margin-top: 1250px;
+        margin-top:3200px;
         margin-left: 0px;
         margin-right: 0px;
         position: relative;
@@ -776,7 +752,8 @@
         height: 0px;
     }
     .fab {
-        padding-left0px;
+        
+        padding-left: 0px;
         padding-top: 5px;
         font-size: 14px;
         text-align: center;
@@ -877,6 +854,15 @@
      font-size:16px;   
     }
 }
+@media only screen and (max-width:373px) {
+   
+    .fab {
+        padding-top:30px;  
+    }
+    .prom {
+        padding-top: 30px;
+    }
+    }
     
    
    

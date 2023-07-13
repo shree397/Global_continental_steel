@@ -1,0 +1,140 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+.content-container {
+    padding-top:40px;
+    padding-left: 50px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .content-container p {
+        
+        padding-left:150px;
+        font-size: 20px;
+        color: #555555;
+        font-weight: 400;
+    }
+.icon-conten {
+    padding-left: 50px;
+    padding-right:100px
+}
+.icon-conten, .rows, .row-line {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.column i {
+    font-size: 30px;
+    float: left;
+    width: 40px;
+    height: 90px;
+}
+.col-line{
+    width:30%;
+    margin:0 15px;
+}
+.column h5 {
+    color: red;
+    font-size: 18px;
+}
+    .column h5:hover {
+        color: black;
+    }
+.column p {
+    font-size: 16px;
+    color: #555555;
+}
+.company {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+    background: #efefef;
+}
+.company h1{
+    text-align:center;
+    padding-bottom:15px;
+}
+ .structure h3{
+     padding-top:20px;
+     text-align:center;
+ }
+.structure img {
+    padding-left:250px;
+    width:80%;
+    height:auto;
+}
+@media only screen and (max-width:1053px) {
+    .icon-conten, .rows {
+        flex-wrap: wrap;
+    }
+    .column {
+        width: 40%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .row-line {
+        flex-wrap: wrap;
+    }
+    .col-line {
+        width: 40%;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 0 10px;
+    }
+    .structure img {
+        padding-left: 150px;
+    }
+    }
+@media only screen and (max-width:881px) {
+    .icon-conten, .rows, .row-line {
+        display: grid;
+        padding-right:0px;
+    }
+     h1{
+        font-size:18px;
+    }
+    .column {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .col-line {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+    }
+.row-line{
+    padding-top:10px;
+}
+    .content-container p {
+        padding-left: 50px;
+        font-size: 16px;
+    }
+    .content-container h1{
+        font-size:20px;
+    }
+    .content-container {
+        display: grid;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .content-container p{
+        padding-left:0px;
+    }
+    .structure h3{
+        font-size:18px;
+    }
+    .structure img {
+        padding-left: 50px;
+    }
+    }

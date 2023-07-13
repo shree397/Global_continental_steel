@@ -197,7 +197,7 @@ nav {
         
     }
     #img{
-        width:200px;
+        width:300px;
         height:130px;
     }
     .body-container{
@@ -227,8 +227,8 @@ nav {
     }
 
     .container1 {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left:20px;
+        padding-right:20px;
     }
 
     .body-container {
@@ -237,11 +237,11 @@ nav {
     }
 
     #location, #phone {
-        margin-left: 15px;
+        margin-left: 0px;
     }
 
     #img {
-        width: 180px;
+        width:220px;
     }
 }
 @media only screen and (max-width:1002px) {
@@ -316,7 +316,7 @@ nav {
 
     #img {
         padding-left: 10px;
-        width: 200px;
+        width: 250px;
     }
 }
 
@@ -330,7 +330,7 @@ nav {
         }
 
         #img {
-            width: 200px;
+            width: 250px;
             height: 150px;
         }
 
@@ -354,7 +354,7 @@ nav {
 
     @media only screen and (max-width:347px) {
         #img {
-            width:200px;
+            width:210px;
         }
 
         .container1 {

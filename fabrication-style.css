@@ -5,57 +5,16 @@
     box-shadow: 10px inset white;
 }
 
-.img-container, #gallery {
-    box-shadow: 0 4px 4px rgba(0,0,0,0.4);
-}
 
-#gallery {
-    margin-top: 20px;
-    margin: 15px;
-    border: 1px solid white;
-    float: left;
-    width: 350px;
-    height: 280px;
-}
-
-.redesign {
-    height: 200px;
-}
-
-#image {
-    margin-bottom: 20px;
-}
-
-#gallery img {
-    width: 100%;
-    background-size: 100%;
-    background-position: center;
-    cursor: zoom-in;
-    transition: 0.2s ease-in-out;
-}
-
-    #gallery img:hover {
-        transform: scale(1.1);
-    }
-
-.desc {
-    padding: 20px;
-    background-color: white;
-    color: black;
-    text-align: auto;
-    font-weight: 700;
-    font-size: 20px;
-    padding-right: 10px;
-}
 .image-content {
     margin-top: 60px;
     display: flex;
     margin-bottom: 60px;
 }
-.image-content p {
-    margin-top: -15px;
-    padding-left:15px;
-}
+    .image-content p {
+        margin-top: -20px;
+        padding-left: 15px;
+    }
     .image-content ul {
         margin-top: -15px;
         padding-left: 30px;
@@ -63,6 +22,7 @@
         padding-bottom:20px
     }
 .image-content img {
+    padding-left:20px;
         height: 300px;
 
 }
@@ -113,7 +73,7 @@
 @media only screen and (max-width:1440px) {
     .img-container {
         padding-right: 0px;
-        padding-left: 5px;
+        padding-left:20px;
     }
 
     .image-container {
@@ -130,15 +90,15 @@
 }
 @media only screen and (max-width:1270px) {
     .image-container {
-        margin-left: 10px;
+       
         margin-bottom: 20px;
         display: flex;
         row-gap: 20px;
         column-gap: 20px;
     }
 
-    .image-content {
-        display: grid;
+    .image-content img {
+        width: 500px;
     }
 
     .image-container img {
@@ -146,21 +106,33 @@
         height: 50%;
     }
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:850px) {
     .image-container {
         display: flex;
         flex-direction: column;
+    }
+    .image-content {
+        display: grid;
     }
     .image-content img{
         width:500px;
     }
     .image-container img{
-        width:200px;
+        width:300px;
+        height:200px;
+    }
+    .center{
+        padding-top:20px;
+        padding-left:10px;
+    }
+    .submit-strut {
+        margin-left:10px;
     }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:502px) {
     .image-content img {
-        width: 320px;
+        width: 330px;
+        height:200px;
     }
 }
 
