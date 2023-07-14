@@ -5,6 +5,7 @@
 .image-content{
     display:flex;
     padding-top:30px;
+    padding-right:20px;
     padding-bottom:40px;
 }
 #image-io {

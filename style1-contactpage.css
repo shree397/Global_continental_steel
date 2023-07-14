@@ -127,6 +127,10 @@ input[type="submit"] {
     .global-img {
         display:none;
     }
+    form {
+        margin: 5vh auto 0 0;
+        padding: 20px;
+    }
     input[type="submit"] {
         margin-top: 30px;
         width: 90%;
@@ -146,6 +150,7 @@ input[type="submit"] {
         width:300px;
        
     }
+
    
 }
 @media only screen and (max-width:350px) {
@@ -159,4 +164,4 @@ input[type="submit"] {
         margin:5px;
         padding:5px;
     }
-    }
+ }

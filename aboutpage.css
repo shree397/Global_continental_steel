@@ -5,7 +5,7 @@
 .content-container {
     padding-top:40px;
     padding-left: 50px;
-    padding-right: 100px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -19,16 +19,16 @@
     }
 .icon-conten {
     padding-left: 50px;
-    padding-right:100px
+    padding-right:50px
 }
 .icon-conten, .rows, .row-line {
-    padding-top: 60px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .column i {
     font-size: 30px;
@@ -97,7 +97,7 @@
 @media only screen and (max-width:881px) {
     .icon-conten, .rows, .row-line {
         display: grid;
-        padding-right:0px;
+       
     }
      h1{
         font-size:18px;
@@ -126,7 +126,7 @@
     .content-container {
         display: grid;
         padding-left: 50px;
-        padding-right: 0px;
+      
     }
     .content-container p{
         padding-left:0px;
@@ -137,4 +137,34 @@
     .structure img {
         padding-left: 50px;
     }
+    }
+    @media only screen and (max-width:441px) {
+        .icon-conten,  .company {
+            padding-left:20px;
+            padding-right:20px;
+           
+        }
+        .column p {
+            font-size:14px;
+        padding-left:30px;
+        }
+        .column i {
+            font-size: 20px;
+            float: left;
+            width: 30px;
+            height: 60px;
+        }
+        .content-container {
+            padding-left:20px;
+            padding-right:20px;
+        }
+        .content-container p {
+            font-size:14px; 
+        }
+        .company h1{
+            font-size:16px;
+        }
+       h4{
+            font-size:18px;
+        }
     }

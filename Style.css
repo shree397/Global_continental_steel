@@ -1,5 +1,6 @@
 ﻿.img-container {
-	padding-right: 80px;
+	padding: 0 150px;
+	justify-items: center;
 	box-shadow: 10px inset white;
 }
 
@@ -91,7 +92,7 @@
 
 .btn {
 	text-align-last: left;
-	padding-left: 30px;
+	padding: 30px;
 }
 
 .btn:hover {
@@ -187,7 +188,7 @@
 	}
 
 	20% {
-		transform: translateX(0%);
+		transform: translateX(-120%);
 	}
 
 	45% {
@@ -195,25 +196,25 @@
 	}
 
 	60% {
-		transform: translateX(-120%);
+		transform: translateX(-360%);
 	}
 
 	75% {
-		transform: translateX(-120%);
+		transform: translateX(-240%);
 	}
 
 	90% {
-		transform: translateX(0%);
+		transform: translateX(-360%);
 	}
 
 	100% {
-		transform: translateX(0%);
+		transform: translateX(-480%);
 	}
 }
 
 .content-container {
-	padding-left: 180px;
-	padding-right: 150px;
+	padding-left: 80px;
+	padding-right: 80px;
 	padding-top: 60px;
 }
 
@@ -234,10 +235,11 @@
 	padding-right: 160px;
 }
 
-content-container,
+.content-container,
 h3 {
 	padding-top: 25px;
-	font-size: 30px;
+	font-size: 18px;
+	color: #555555;
 	padding-left: 10px;
 }
 
@@ -248,7 +250,7 @@ h3 {
 }
 
 .content-passage {
-	padding-right: 150px;
+	padding-right: 100px;
 	padding-left: 100px;
 }
 
@@ -308,11 +310,10 @@ h3 {
 .customer-logos {
 	padding-left: 150px;
 	padding-right: 150px;
-	margin: 50px 0;
 }
 
 #clients-logo {
-	margin: 70px 0;
+	padding-top: 150px;
 }
 
 .slick-item {
@@ -452,15 +453,24 @@ h3 {
 		padding-right: 50px;
 		padding-top: 60px;
 	}
+	.img-container {
+		padding: 0 120px;
+	}
 	.slider img {
 		width: 100%;
 	}
+	#slider-text {
+		height: 400px;
+		margin-top: 0px;
+	}
 	#gallery {
 		margin-top: 20px;
-		margin: 20px;
+		margin: 15px;
+		width: 300px;
+		height: 280px;
 	}
 }
-@media only screen and (max-width: 1351px) {
+@media only screen and (max-width: 1341px) {
 	.slider img {
 		width: 100%;
 		aspect-ratio: 150/50;
@@ -468,15 +478,15 @@ h3 {
 		height: 600px;
 	}
 	.img-container {
-		padding-right: 0px;
+		padding: 0 80px;
 	}
 	#gallery {
 		margin-top: 20px;
-		margin: 35px;
+		margin: 15px;
 		border: 1px solid white;
 		float: left;
-		width: 300px;
-		height: 250px;
+		width: 320px;
+		height: 280px;
 	}
 	#slider-text {
 		width: 45%;
@@ -498,11 +508,14 @@ h3 {
 @media only screen and (max-width: 1321px) {
 	#gallery {
 		margin-top: 20px;
-		margin: 25px;
+		margin: 15px;
 		border: 1px solid white;
 		float: left;
 		width: 300px;
 		height: 250px;
+	}
+	.img-container {
+		padding: 0 100px;
 	}
 	.slider img {
 		width: 100%;
@@ -511,14 +524,17 @@ h3 {
 		height: 600px;
 	}
 }
-@media only screen and (max-width: 1302px) {
+@media only screen and (max-width: 1311px) {
 	#gallery {
 		margin-top: 20px;
 		margin: 10px;
 		border: 1px solid white;
 		float: left;
-		width: 300px;
-		height: 250px;
+		width: 310px;
+		height: 280px;
+	}
+	.btn {
+		padding-top: 0px;
 	}
 	.slider img {
 		width: 100%;
@@ -526,14 +542,29 @@ h3 {
 		object-fit: cover;
 		height: 600px;
 	}
+	.img-container {
+		padding: 0 80px;
+	}
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1251px) {
 	.slider img {
 		width: 100%;
 		aspect-ratio: 150/50;
 		object-fit: cover;
 		height: 600px;
+	}
+	#gallery {
+		margin-top: 20px;
+		margin: 15px;
+		border: 1px solid white;
+		float: left;
+		width: 310px;
+		height: 280px;
+	}
+	.img-container {
+		align-items: center;
+		padding-left: 120px;
 	}
 	.content-container {
 		padding-left: 10px;
@@ -555,7 +586,6 @@ h3 {
 		padding-right: 10px;
 	}
 
-	content-container,
 	h3 {
 		padding-top: 10px;
 		font-size: 20px;
@@ -632,28 +662,40 @@ h3 {
 		padding-left: 15px;
 	}
 }
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 1241px) {
 	#gallery {
 		margin-top: 20px;
-		margin: 10px;
+		margin: 15px;
 		border: 1px solid white;
 		float: left;
 		width: 300px;
-		height: 300px;
+		height: 280px;
+	}
+	.img-container {
+		align-items: center;
+		padding: 0 80px;
 	}
 }
-@media only screen and (max-width: 981px) {
+@media only screen and (max-width: 1171px) {
 	#gallery {
 		margin-top: 20px;
-		margin: 10px;
+		margin: 12px;
 		border: 1px solid white;
 		float: left;
-		width: 250px;
-		height: 300px;
+		width: 300px;
+		height: 280px;
+	}
+	.img-container {
+		align-items: center;
+		padding: 0 30px;
+	}
+	#slider-text ul li {
+		padding-top: 40px;
+		padding-bottom: 0px;
 	}
 	.slider-container-text {
 		text-align: center;
-		padding: 0px;
+		padding-bottom: 0px;
 	}
 	.slider-container-text h1 {
 		font-size: 18px;
@@ -682,17 +724,53 @@ h3 {
 		padding-top: 30px;
 	}
 }
+@media only screen and (max-width: 1053px) {
+	.img-container {
+		align-items: center;
+		padding: 0 20px;
+	}
+	#gallery {
+		margin-top: 20px;
+		margin: 16px;
+		border: 1px solid white;
+		float: left;
+		width: 250px;
+		height: 300px;
+	}
+	.text-scroller {
+		background-color: cornflowerblue;
+		margin-top: 1320px;
+	}
+}
 @media only screen and (max-width: 951px) {
 	.slider-container {
 		display: none;
 	}
+	#slider-text ul li {
+		padding-top: 20px;
+		padding-bottom: 0px;
+	}
 }
-@media only screen and (max-width: 831px) {
+@media only screen and (max-width: 907px) {
+	.img-container {
+		align-items: center;
+		padding: 0 20px;
+	}
+	#gallery {
+		margin-top: 20px;
+		margin: 10px;
+		border: 1px solid white;
+		float: left;
+		width: 250px;
+		height: 300px;
+	}
+}
+@media only screen and (max-width: 871px) {
 	.img-container {
 		display: grid;
 	}
 	#gallery {
-		width: 400px;
+		width: 500px;
 	}
 	.text-scroller {
 		background-color: cornflowerblue;
@@ -717,6 +795,16 @@ h3 {
 		font-size: 30px;
 		font-weight: 700;
 	}
+	.slider-container-text h1 {
+		font-size: 16px;
+	}
+	.slider-container-text p {
+		font-size: 12px;
+	}
+	#slider-text ul li {
+		padding-top: 10px;
+		padding-bottom: 0px;
+	}
 }
 @media only screen and (max-width: 691px) {
 	.testimonial {
@@ -726,17 +814,20 @@ h3 {
 	}
 	#slider-text li {
 		flex: 0 0 100%;
-		margin-right: 0px;
+		margin-right: 30px;
 		padding-top: 10px;
+		padding-right: 50px;
+	}
+	.slider-container-text p {
+		font-size: 14px;
 	}
 	#slider-text {
 		text-align: center;
-		padding-left: 30px;
+		padding-top: 50px;
+		margin-left: 20px;
 		width: 100%;
 		height: 300px;
 		overflow: hidden;
-	}
-	.content-info {
 	}
 	.content-passage {
 		padding-right: 10px;
@@ -802,14 +893,27 @@ h3 {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	.slick-list {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.customer-logos {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 	.passage p {
 		float: right;
 		width: 100%;
-		padding-left: 0px;
+		padding-left: 10px;
 		padding-bottom: 50px;
 		padding-right: 0px;
 		padding-top: 10px;
 		font-size: 16px;
+	}
+	.item img {
+		width: 50%;
+		aspect-ratio: 10/20;
+		object-fit: contain;
 	}
 
 	content-container,
@@ -822,8 +926,31 @@ h3 {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.customer-logos {
+		margin-bottom: 30px;
+	}
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 581px) {
+	#gallery {
+		width: 400px;
+	}
+	.img-container {
+		padding: 0 5px;
+	}
+	.text-scroller {
+		background-color: cornflowerblue;
+		margin-top: 3250px;
+	}
+	#slider-text {
+		text-align: center;
+		padding-top: 30px;
+		margin-left: 20px;
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+	}
+}
+@media only screen and (max-width: 448px) {
 	.passage p {
 		padding-top: 20px;
 		font-size: 14px;
@@ -834,16 +961,20 @@ h3 {
 		padding-bottom: 15px;
 		padding-left: 10px;
 	}
-	.img-container {
-		padding-right: 0px;
+	#slider-text {
+		text-align: center;
+		padding-top: 10px;
+		margin-left: 20px;
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
 	}
-
 	#gallery {
 		margin-top: 10px;
 
 		border: 1px solid white;
 		float: left;
-		width: 250px;
+		width: 350px;
 		height: 300px;
 	}
 
@@ -862,11 +993,37 @@ h3 {
 		font-size: 16px;
 	}
 }
-@media only screen and (max-width: 373px) {
+@media only screen and (max-width: 399px) {
+	#slider-text {
+		text-align: center;
+		padding-top: 0px;
+		margin-left: 20px;
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+	}
 	.fab {
 		padding-top: 30px;
 	}
 	.prom {
 		padding-top: 30px;
+	}
+	#clients-logo {
+		padding-top: 170px;
+	}
+	#gallery {
+		margin-top: 10px;
+
+		border: 1px solid white;
+		float: left;
+		width: 290px;
+		height: 280px;
+	}
+	.slider-container-text p {
+		font-size: 11px;
+	}
+	.text-scroller {
+		background-color: cornflowerblue;
+		margin-top: 3055px;
 	}
 }

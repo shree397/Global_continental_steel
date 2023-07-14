@@ -292,7 +292,7 @@ nav {
 }
 @media only screen and (max-width:848px) {
     #toggle-btn {
-        padding-left: 50px;
+        padding-left: 0px;
         display: block;
     }
 
@@ -335,7 +335,7 @@ nav {
         }
 
         #toggle-btn {
-            padding-left: 50px;
+            padding-left:0px;
             display: block;
         }
 
